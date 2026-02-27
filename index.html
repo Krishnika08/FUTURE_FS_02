@@ -13,15 +13,23 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <h2>Chai Bliss</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+      <div class="logo">Chai Bliss</div>
+
+      <!-- Hamburger icon -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <!-- Navigation menu -->
+      <nav class="nav-menu">
+        <a href="#Home">Home</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -160,6 +168,15 @@
     </footer>
 
 <script src="script.js"></script>
+    <script>
+    const menuToggle = document.getElementById("mobile-menu");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
 
 </body>
+
 </html>
