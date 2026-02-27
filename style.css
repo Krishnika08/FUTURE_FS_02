@@ -15,43 +15,52 @@ section {
 }
 
 /* ===== NAVBAR ===== */
-nav {
+/* base styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* hide nav links on mobile */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+/* hamburger hidden on large screens */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin: 4px 0;
+}
+
+/* mobile styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-menu.active {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #C97C5D;
-    color: white;
-    flex-wrap: wrap;
-}
+  }
 
-nav ul {
-    list-style: none;
+  .menu-toggle {
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+  }
 }
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-/* Mobile Navbar */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-}
-
 /* ===== HERO SECTION ===== */
 .hero {
     text-align: center;
@@ -214,4 +223,5 @@ footer {
 
 .clear-btn:hover {
     background-color: #a93226;
+
 }
