@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chai Bliss - Tirupur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>Chai Bliss</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Fresh Chai. Cozy Vibes.</h1>
+        <p>Your comfort spot in Tirupur.</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+                Welcome to <strong>Chai Bliss</strong>, your cozy comfort corner in Tirupur. 
+                We believe a perfect cup of chai can brighten your day and bring people together. 
+                From aromatic masala chai to creamy cappuccinos and freshly prepared snacks, 
+                every item is crafted with care and quality ingredients. 
+
+                Whether you're catching up with friends, working peacefully, or simply relaxing, 
+                Chai Bliss offers a warm ambiance, friendly service, and flavors that feel like home.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu -->
+     <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-container">
+
+        
+        <div class="card">
+    <div class="image-box">
+        <img src="Masala.jpeg" alt="Masala Chai">
+    </div>
+    <h3>Masala Chai</h3>
+    <p>₹30</p>
+    <button onclick="addToCart('Masala Chai', 30, 'Masala.jpeg')">
+    Add to Cart
+    </button>
+    </div>
+
+    <div class="card">
+        <div class="image-box">
+            <img src="ginger.jpeg" alt="Ginger Chai">
+        </div>
+        <h3>Ginger Chai</h3>
+        <p>₹35</p>
+        <button onclick="addToCart('Ginger Chai', 35, 'ginger.jpeg')">
+            Add to Cart
+        </button>
+    </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="cappuccino.jpeg" alt="Cappuccino">
+            </div>
+            <h3>Cappuccino</h3>
+            <p>₹120</p>
+            <button onclick="addToCart('Cappuccino', 120, 'cappuccino.jpeg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="sandwich.jpeg" alt="Veg Sandwich">
+            </div>
+            <h3>Veg Sandwich</h3>
+            <p>₹90</p>
+            <button onclick="addToCart('Veg Sandwich', 90, 'sandwich.jpeg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="fries.jpeg" alt="French Fries">
+            </div>
+            <h3>French Fries</h3>
+            <p>₹100</p>
+            <button onclick="addToCart('French Fries', 100, 'fries.jpeg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="cake.jpeg" alt="Chocolate Cake">
+            </div>
+            <h3>Chocolate Cake</h3>
+            <p>₹120</p>
+            <button onclick="addToCart('Chocolate Cake', 120, 'cake.jpeg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="coldcoffee.jpeg" alt="Cold Coffee">
+            </div>
+            <h3>Cold Coffee</h3>
+            <p>₹130</p>
+            <button onclick="addToCart('Cold Coffee', 130, 'coldcoffee.jpeg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="pancakes.jpeg" alt="Pancakes">
+            </div>
+            <h3>Pancakes</h3>
+            <p>₹150</p>
+            <button onclick="addToCart('Pancakes', 150, 'pancakes.jpeg')">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Tirupur</p>
+        <p>🕒 Open: 9 AM – 9 PM</p>
+
+        <a href="https://instagram.com/krishnika._.d" target="_blank" class="btn">
+            Follow Us on Instagram
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Chai Bliss | Designed by Krishnika</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
