@@ -6,10 +6,22 @@
 </head>
 <body>
 
-    <nav>
-        <h2>Chai Bliss</h2>
-        <a href="index.html">Back to Menu</a>
-    </nav>
+    <header class="navbar">
+        <div class="logo">Chai Bliss</div>
+    
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    
+        <nav class="nav-menu">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#menu">Menu</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
     <section class="cart-section">
         <h2>Your Cart</h2>
@@ -21,30 +33,39 @@
         </button>
     </section>
 
-    <script>
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        let cartDiv = document.getElementById("cartItems");
-        let total = 0;
+   <script>
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cartDiv = document.getElementById("cartItems");
+    let total = 0;
 
-        cart.forEach((item) => {
-            total += item.price;
+    cart.forEach((item) => {
+        total += item.price;
 
-            cartDiv.innerHTML += `
-                <div class="cart-item">
-                    <img src="${item.image}" class="cart-img">
-                    <h4>${item.name}</h4>
-                    <p>₹${item.price}</p>
-                </div>
-            `;
-        });
+        cartDiv.innerHTML += `
+            <div class="cart-item">
+                <img src="${item.image}" class="cart-img">
+                <h4>${item.name}</h4>
+                <p>₹${item.price}</p>
+            </div>
+        `;
+    });
 
-        document.getElementById("totalPrice").innerText = "Total: ₹" + total;
+    document.getElementById("totalPrice").innerText = "Total: ₹" + total;
 
-        function clearCart() {
-            localStorage.removeItem("cart");
-            location.reload(); 
-        }
+    function clearCart() {
+        localStorage.removeItem("cart");
+        location.reload(); 
+    }
+
+    // Navbar toggle
+    const menuToggle = document.getElementById("mobile-menu");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
     </script>
 
 </body>
+
 </html>
