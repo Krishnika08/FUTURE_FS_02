@@ -39,20 +39,17 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
+        <section class="about">
         <div class="about-content">
             <h2>About Us</h2>
             <p>
-                Welcome to <strong>Chai Bliss</strong>, your cozy comfort corner in Tirupur. 
-                We believe a perfect cup of chai can brighten your day and bring people together. 
-                From aromatic masala chai to creamy cappuccinos and freshly prepared snacks, 
-                every item is crafted with care and quality ingredients. 
-
-                Whether you're catching up with friends, working peacefully, or simply relaxing, 
-                Chai Bliss offers a warm ambiance, friendly service, and flavors that feel like home.
+                Welcome to <strong>Chai Bliss</strong>, owned by <strong>Mr. Shiv</strong>. 
+                Located in Tirupur, we serve fresh and aromatic chai, coffee, and snacks 
+                made with high-quality ingredients. Our cozy atmosphere makes it the 
+                perfect place to relax, work, or spend time with friends.
             </p>
         </div>
-    </section>
+        </section>
 
     <!-- Menu -->
      <section id="menu" class="menu">
@@ -151,33 +148,71 @@
 
     </div>
     </section>
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>📍 Tirupur</p>
-        <p>🕒 Open: 9 AM – 9 PM</p>
+    <!-- Booking Section -->
+<section id="booking" class="booking">
+    <h2>Book a Table</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Your Email" required><br><br>
+        <input type="date" required><br><br>
+        <input type="time" required><br><br>
+        <button type="submit">Book Now</button>
+    </form>
+</section>
 
-        <a href="https://instagram.com/krishnika._.d" target="_blank" class="btn">
-            Follow Us on Instagram
-        </a>
-    </section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Chai Bliss | Designed by Krishnika</p>
-    </footer>
+    <p><strong>Business Name:</strong> Chai Bliss</p>
+    <p><strong>Owner:</strong> Mr. Shiv</p>
+    <p><strong>Address:</strong> Avinashi Road, Tirupur, Tamil Nadu</p>
+    <p><strong>Phone:</strong> +91 9944664341</p>
+    <p>🕒 Open: 9 AM – 9 PM</p>
+
+    <!-- Google Maps -->
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps?q=Avinashi+Road+Tirupur&output=embed"
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/919944664341" class="whatsapp-btn" target="_blank">
+    Chat on WhatsApp
+</a>
+
+<!-- Call Button -->
+<a href="tel:+919944664341" class="call-btn">
+    Call Now
+</a>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Chai Bliss | Designed by Krishnika</p>
+</footer>
 
 <script src="script.js"></script>
-    <script>
-    const menuToggle = document.getElementById("mobile-menu");
-    const navMenu = document.querySelector(".nav-menu");
 
-    menuToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-    });
-  </script>
+<script>
+const menuToggle = document.getElementById("mobile-menu");
+const navMenu = document.querySelector(".nav-menu");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+</script>
+
+
 
 </body>
 
 </html>
+
 
