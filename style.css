@@ -259,3 +259,49 @@ footer {
 
 }
 
+/* Booking Section */
+.booking {
+    padding: 50px;
+    text-align: center;
+}
+
+.booking input {
+    padding: 10px;
+    width: 250px;
+}
+
+.booking button {
+    padding: 10px 20px;
+    background-color: #C97C5D;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Call Button */
+.call-btn {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #C97C5D;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
